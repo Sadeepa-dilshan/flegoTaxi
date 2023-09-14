@@ -18,10 +18,11 @@ class _LoginpageState extends State<Loginpage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        
         backgroundColor: Color(0xff333333),
-        body: Column(
-          children: [
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
               Stack(
                 children: [
                   //mainhead
@@ -37,77 +38,113 @@ class _LoginpageState extends State<Loginpage> {
                           child: Image.asset("assets/Text Logo.png"))),
                 ],
               ),
-
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 30),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 60, horizontal: 30),
                 child: Container(
-                    width: screenwidth,
-                    height: 400,
-                     decoration: BoxDecoration(
-                     // color: Colors.amber,
+                  width: screenwidth,
+                  height: 400,
+                  decoration: BoxDecoration(
+                      // color: Colors.amber,
                       borderRadius: BorderRadius.circular(25)),
-                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        
-                         Text(
-                      'Login or Register ',
-                      style: GoogleFonts.robotoCondensed(
-                          fontSize: 36,
-                          color: Color(0xffC4CE2E),
-                          fontWeight: FontWeight.w400),
-                    ),
-                    SizedBox(height: 35,),
-                    textform(width: screenwidth, height: 60, lable: 'Email/Mobile phone number', icon: Icon(Icons.person_outlined),),
-                    SizedBox(height: 20,),
-                    textform(width: screenwidth, height: 60, lable: 'Password', icon: Icon(Icons.key),),
-                     SizedBox(height: 20,),
-                     Row(
-                      children: [
-                        Icon(Icons.check_box, color: Color(0xffC4CE2E),),
-                        SizedBox(width: 20,),
-                        Text(
-                          'Keep me logged in ',
-                          style: GoogleFonts.robotoCondensed(
-                              fontSize: 18,
-                              color: Color(0xffC4CE2E),
-                              fontWeight: FontWeight.w600),
-                        ),
-                      ],
-                     ),
-                     SizedBox(height: 20,),
-                     button(width: screenwidth, height: 60, bname:'Login', Ccolor: Color(0xffC4CE2E),Tcolor: Colors.black, ),
-                    SizedBox(height: 20,),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Login or Register ',
+                        style: GoogleFonts.robotoCondensed(
+                            fontSize: 36,
+                            color: Color(0xffC4CE2E),
+                            fontWeight: FontWeight.w400),
+                      ),
+                      SizedBox(
+                        height: 35,
+                      ),
+                      textform(
+                        width: screenwidth,
+                        height: 60,
+                        lable: 'Email/Mobile phone number',
+                        icon: Icon(Icons.person_outlined),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      textform(
+                        width: screenwidth,
+                        height: 60,
+                        lable: 'Password',
+                        icon: Icon(Icons.key),
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.check_box,
+                            color: Color(0xffC4CE2E),
+                          ),
+                          SizedBox(
+                            width: 20,
+                          ),
+                          Text(
+                            'Keep me logged in ',
+                            style: GoogleFonts.robotoCondensed(
+                                fontSize: 18,
+                                color: Color(0xffC4CE2E),
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      button(
+                          width: screenwidth,
+                          height: 60,
+                          bname: 'Login',
+                          Ccolor: Color(0xffC4CE2E),
+                          Tcolor: Colors.black,
+                          Tsize: 25),
+                      SizedBox(
+                        height: 20,
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                         Text(
-                          'Forget password |',
-                          style: GoogleFonts.robotoCondensed(
-                              fontSize: 18,
-                              color: Color(0xffC4CE2E),
-                              fontWeight: FontWeight.w400),
-                        ),
-                       // SizedBox(width: 20,),
-                        Text(
-                          ' Create Account',
-                          style: GoogleFonts.robotoCondensed(
-                              fontSize: 18,
-                              color: Color(0xffC4CE2E),
-                              fontWeight: FontWeight.w400),
-                        ),
-                      ],
-                     ),
-                      ],
-
-                      
-                     ),
-
-
-                     ),
-              )
-
-          ],
+                        children: [
+                          Text(
+                            'Forget password |',
+                            style: GoogleFonts.robotoCondensed(
+                                fontSize: 18,
+                                color: Color(0xffC4CE2E),
+                                fontWeight: FontWeight.w400),
+                          ),
+                          // SizedBox(width: 20,),
+                          Text(
+                            'Create Account',
+                            style: GoogleFonts.robotoCondensed(
+                                fontSize: 18,
+                                color: Color(0xffC4CE2E),
+                                fontWeight: FontWeight.w400),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Stack(children: [
+                Container(
+                    width: screenwidth,
+                    height: 300,
+                    color: Colors.black,
+                    child: Image.asset(
+                      "assets/road.png",
+                      fit: BoxFit.contain,
+                    )),
+              ])
+            ],
+          ),
         ),
       ),
     );

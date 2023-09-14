@@ -104,11 +104,11 @@ class language extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           
                            children: [
-                             button(width: 232, height: 40, bname: 'English', Tcolor: Colors.black, Ccolor: Color(0xffC4CE2E),),
+                             button(width: 232, height: 40, bname: 'English', Tcolor: Colors.black, Ccolor: Color(0xffC4CE2E),Tsize: 25,),
                              SizedBox(height: 20,),
-                             button(width: 232, height: 40, bname: 'தமிழ்', Tcolor: Colors.black , Ccolor: Color(0xffC4CE2E)),
+                             button(width: 232, height: 40, bname: 'தமிழ்', Tcolor: Colors.black , Ccolor: Color(0xffC4CE2E),Tsize: 25),
                              SizedBox(height: 20,),
-                             button(width: 232, height: 40, bname: 'සිංහ​ල', Tcolor: Colors.black , Ccolor: Color(0xffC4CE2E)),
+                             button(width: 232, height: 40, bname: 'සිංහ​ල', Tcolor: Colors.black , Ccolor: Color(0xffC4CE2E),Tsize: 25),
                              SizedBox(height: 10,),
                            ],
                          )
