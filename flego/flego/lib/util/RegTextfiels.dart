@@ -29,8 +29,8 @@ class Regtextform extends StatelessWidget {
           border: OutlineInputBorder(
               borderSide: BorderSide.none,
               borderRadius: BorderRadius.circular(15)),
-          labelText: lable,
-          labelStyle: GoogleFonts.robotoCondensed(
+          hintText: lable,
+          hintStyle: GoogleFonts.robotoCondensed(
               fontSize: 15,
               color: Color(0xffC4CE2E),
               fontWeight: FontWeight.w200),

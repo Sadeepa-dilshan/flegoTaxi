@@ -1,5 +1,5 @@
 import 'package:flego/util/button.dart';
-import 'package:flego/util/textform.dart';
+import 'package:flego/util/prefixtextform.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -60,7 +60,7 @@ class _LoginpageState extends State<Loginpage> {
                       SizedBox(
                         height: 35,
                       ),
-                      textform(
+                      pretextform(
                         width: screenwidth,
                         height: 60,
                         lable: 'Email/Mobile phone number',
@@ -69,7 +69,7 @@ class _LoginpageState extends State<Loginpage> {
                       SizedBox(
                         height: 20,
                       ),
-                      textform(
+                      pretextform(
                         width: screenwidth,
                         height: 60,
                         lable: 'Password',

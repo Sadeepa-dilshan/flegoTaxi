@@ -1,5 +1,5 @@
 import 'package:flego/util/button.dart';
-import 'package:flego/util/textform.dart';
+import 'package:flego/util/prefixtextform.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -61,9 +61,9 @@ class _setLocation1State extends State<setLocation1> {
                             ),
                             Column(
                               children: [
-                                textform(width: 315, height: 60, lable: '', icon: Icon(Icons.location_on)),
+                                pretextform(width: 315, height: 60, lable: '', icon: Icon(Icons.location_on)),
                                 SizedBox(height: 10,),
-                                textform(width: 315, height: 60, lable: '', icon: Icon(Icons.location_on))
+                                pretextform(width: 315, height: 60, lable: '', icon: Icon(Icons.location_on))
                               ],
                               
                             ),

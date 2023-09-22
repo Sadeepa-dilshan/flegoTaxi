@@ -5,15 +5,14 @@ class textform extends StatelessWidget {
   final double width;
   final double height;
   final String lable;
-  final Icon icon;
   
-  
-  const textform({super.key,
-  required this.width,
-  required this.height,
-  required this.lable,
-  required this.icon,
-  
+
+  const textform({
+    super.key,
+    required this.width,
+    required this.height,
+    required this.lable,
+    
   });
 
   @override
@@ -22,33 +21,23 @@ class textform extends StatelessWidget {
     return Container(
       width: width,
       height: height,
-     decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(15),
-      color: Colors.white.withOpacity(0.1)
-     ),
-     child: TextField(
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          color: Colors.white.withOpacity(0.1)),
+      child: TextField(
         decoration: InputDecoration(
-          
           border: OutlineInputBorder(
-            borderSide: BorderSide.none,
-            borderRadius: BorderRadius.circular(15)
-          ),
-          labelText:lable,
-          labelStyle: GoogleFonts.robotoCondensed(
-                fontSize: 15,
-                color: Color(0xffC4CE2E),
-                fontWeight: FontWeight.w200),
-          prefixIcon: icon,
-          prefixIconColor: Color(0xffC4CE2E),
-          
+              borderSide: BorderSide.none,
+              borderRadius: BorderRadius.circular(15)),
+          hintText: lable,
+          hintStyle: GoogleFonts.robotoCondensed(
+              fontSize: 15,
+              color: Color(0xffC4CE2E),
+              fontWeight: FontWeight.w200),
+          //prefixIcon: icon,
+         // prefixIconColor: Color(0xffC4CE2E),
         ),
       ),
-     
     );
   }
 }
-
-
-
-
- 

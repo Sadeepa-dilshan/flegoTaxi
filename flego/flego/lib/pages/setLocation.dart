@@ -1,5 +1,5 @@
 import 'package:flego/util/sufTextform.dart';
-import 'package:flego/util/textform.dart';
+import 'package:flego/util/prefixtextform.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -63,7 +63,7 @@ class _setLocationState extends State<setLocation> {
                       children: [
                         Icon(Icons.fiber_manual_record, size: 10,color: Color(0xffC4CE2E),),
                         SizedBox(width: 10,),
-                        textform(width: 320, height: 60, lable: '', icon: Icon(Icons.location_on))
+                        pretextform(width: 320, height: 60, lable: '', icon: Icon(Icons.location_on))
                       ],
                     ),
                     SizedBox(height: 20,),
@@ -71,7 +71,7 @@ class _setLocationState extends State<setLocation> {
                         children: [
                           Icon(Icons.fiber_manual_record, size: 10,color: Color(0xffC4CE2E),),
                           SizedBox(width: 10,),
-                          textform(width: 320, height: 60, lable: '', icon: Icon(Icons.location_on))
+                          pretextform(width: 320, height: 60, lable: '', icon: Icon(Icons.location_on))
                         ],
                       ),
                   ],
