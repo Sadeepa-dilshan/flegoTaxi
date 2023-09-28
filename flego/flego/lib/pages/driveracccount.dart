@@ -7,20 +7,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class profilePage extends StatefulWidget {
-  const profilePage({super.key});
+class driveraccount extends StatefulWidget {
+  const driveraccount({super.key});
 
   @override
-  State<profilePage> createState() => _profilePageState();
+  State<driveraccount> createState() => _profilePageState();
 }
 
-class _profilePageState extends State<profilePage> {
+class _profilePageState extends State<driveraccount> {
   TextEditingController emailController = TextEditingController();
-TextEditingController nameController = TextEditingController();
+  TextEditingController nameController = TextEditingController();
 
-void _changeName() {
-
-  
+  void _changeName() {
     showDialog(
         context: context,
         builder: (context) {
@@ -30,41 +28,39 @@ void _changeName() {
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(15)),
             child: AlertDialog(
               backgroundColor: Color(0xff333333),
-              title: text(Tname: 'Change Name', Tsize: 18, Tcolor: Color(0xffC4CE2E), Tweight: FontWeight.w500),
-              content: Container(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-             
-              textform(width: 220, height: 50, lable:'First name'),
-              SizedBox(height: 10),
-              textform(width: 220, height: 50, lable: 'Last name'),
-                  ]
-                ),
-                   
-                    
-                  
-                
+              title: text(
+                  Tname: 'Vehicle Type',
+                  Tsize: 18,
+                  Tcolor: Color(0xffC4CE2E),
+                  Tweight: FontWeight.w500),
+              content:  Center(
+                child: text(
+                    Tname: 'BBc342',
+                    Tsize: 18,
+                    Tcolor: Colors.white,
+                    Tweight: FontWeight.w500),
               ),
               actions: [
-               MaterialButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: button(width: 70, height: 30, bname: 'Cancel', Tsize: 15, Ccolor: Color(0xffC4CE2E), Tcolor: Colors.black)),
+              
                 MaterialButton(
-                  onPressed: () {},
-                  child: button(width: 70, height: 30, bname: 'Change', Tsize: 15, Ccolor: Color(0xffC4CE2E), Tcolor: Colors.black)),
-            
-                
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: button(
+                        width: 70,
+                        height: 30,
+                        bname: 'Done',
+                        Tsize: 15,
+                        Ccolor: Color(0xffC4CE2E),
+                        Tcolor: Colors.black)),
               ],
             ),
           );
         });
-}
+  }
 
 //change Email
-void _changeEmail() {
+  void _changeEmail() {
     showDialog(
         context: context,
         builder: (context) {
@@ -81,12 +77,14 @@ void _changeEmail() {
                   Tweight: FontWeight.w500),
               content: Container(
                 child: Column(mainAxisSize: MainAxisSize.min, children: [
-                 text(Tname: 'stephan@gmail.com', Tsize: 15, Tcolor:Colors.white, Tweight:FontWeight.w400)
-                
+                  text(
+                      Tname: 'stephan@gmail.com',
+                      Tsize: 15,
+                      Tcolor: Colors.white,
+                      Tweight: FontWeight.w400)
                 ]),
               ),
               actions: [
-               
                 MaterialButton(
                     onPressed: () {
                       Navigator.pop(context);
@@ -174,7 +172,7 @@ void _changeEmail() {
               content: Container(
                 child: Column(mainAxisSize: MainAxisSize.min, children: [
                   //English
-                   MaterialButton(
+                  MaterialButton(
                       onPressed: () {
                         Navigator.pop(context);
                       },
@@ -185,10 +183,12 @@ void _changeEmail() {
                           Tsize: 20,
                           Ccolor: Color(0xffC4CE2E),
                           Tcolor: Colors.black)),
-                          SizedBox(height: 10,),
+                  SizedBox(
+                    height: 10,
+                  ),
 
-                          // sinhala
-                          MaterialButton(
+                  // sinhala
+                  MaterialButton(
                       onPressed: () {
                         Navigator.pop(context);
                       },
@@ -199,10 +199,12 @@ void _changeEmail() {
                           Tsize: 20,
                           Ccolor: Color(0xffC4CE2E),
                           Tcolor: Colors.black)),
-                          SizedBox(height: 10,),
+                  SizedBox(
+                    height: 10,
+                  ),
 
-                          //tamil
-                           MaterialButton(
+                  //tamil
+                  MaterialButton(
                       onPressed: () {
                         Navigator.pop(context);
                       },
@@ -213,10 +215,6 @@ void _changeEmail() {
                           Tsize: 20,
                           Ccolor: Color(0xffC4CE2E),
                           Tcolor: Colors.black)),
-
-
-
-
                 ]),
               ),
               actions: [
@@ -231,7 +229,6 @@ void _changeEmail() {
                         Tsize: 15,
                         Ccolor: Color(0xffC4CE2E),
                         Tcolor: Colors.black)),
-               
               ],
             ),
           );
@@ -239,8 +236,8 @@ void _changeEmail() {
   }
 
   //change language
-  
-void _changelanguage() {
+
+  void _changelanguage() {
     showDialog(
         context: context,
         builder: (context) {
@@ -315,7 +312,6 @@ void _changelanguage() {
                         Tsize: 15,
                         Ccolor: Color(0xffC4CE2E),
                         Tcolor: Colors.black)),
-         
               ],
             ),
           );
@@ -324,8 +320,6 @@ void _changelanguage() {
 
   //change password
   void _changepassword() {
-
-  
     showDialog(
         context: context,
         builder: (context) {
@@ -335,39 +329,47 @@ void _changelanguage() {
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(15)),
             child: AlertDialog(
               backgroundColor: Color(0xff333333),
-              title: text(Tname: 'Change password', Tsize: 18, Tcolor: Color(0xffC4CE2E), Tweight: FontWeight.w500),
+              title: text(
+                  Tname: 'Change password',
+                  Tsize: 18,
+                  Tcolor: Color(0xffC4CE2E),
+                  Tweight: FontWeight.w500),
               content: Container(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-             
-              textform(width: 220, height: 50, lable:'New password'),
-              SizedBox(height: 10),
-              textform(width: 220, height: 50, lable: 'Confirm password'),
-                  ]
-                ),
+                child: Column(mainAxisSize: MainAxisSize.min, children: [
+                  textform(width: 220, height: 50, lable: 'New password'),
+                  SizedBox(height: 10),
+                  textform(width: 220, height: 50, lable: 'Confirm password'),
+                ]),
               ),
               actions: [
-               MaterialButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: button(width: 70, height: 30, bname: 'Cancel', Tsize: 15, Ccolor: Color(0xffC4CE2E), Tcolor: Colors.black)),
                 MaterialButton(
-                  onPressed: () {},
-                  child: button(width: 70, height: 30, bname: 'Change', Tsize: 15, Ccolor: Color(0xffC4CE2E), Tcolor: Colors.black)),
-            
-                
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: button(
+                        width: 70,
+                        height: 30,
+                        bname: 'Cancel',
+                        Tsize: 15,
+                        Ccolor: Color(0xffC4CE2E),
+                        Tcolor: Colors.black)),
+                MaterialButton(
+                    onPressed: () {},
+                    child: button(
+                        width: 70,
+                        height: 30,
+                        bname: 'Change',
+                        Tsize: 15,
+                        Ccolor: Color(0xffC4CE2E),
+                        Tcolor: Colors.black)),
               ],
             ),
           );
         });
-}
+  }
 
-//delete account
-void _deletaccount() {
-
-  
+//deleteaccount
+  void _deletaccount() {
     showDialog(
         context: context,
         builder: (context) {
@@ -377,41 +379,46 @@ void _deletaccount() {
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(15)),
             child: AlertDialog(
               backgroundColor: Color(0xff333333),
-              title: text(Tname: 'Delete Acount', Tsize: 18, Tcolor: Colors.red, Tweight: FontWeight.w500),
+              title: text(
+                  Tname: 'Delete Acount',
+                  Tsize: 18,
+                  Tcolor: Colors.red,
+                  Tweight: FontWeight.w500),
               content: Container(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-             
-              textform(width: 220, height: 50, lable:' Mobile number'),
-              SizedBox(height: 10),
-              textform(width: 220, height: 50, lable: 'Password '),
-                  ]
-                ),
+                child: Column(mainAxisSize: MainAxisSize.min, children: [
+                  textform(width: 220, height: 50, lable: ' Mobile number'),
+                  SizedBox(height: 10),
+                  textform(width: 220, height: 50, lable: 'Password '),
+                ]),
               ),
               actions: [
-               MaterialButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: button(width: 70, height: 30, bname: 'Cancel', Tsize: 15, Ccolor: Color(0xffC4CE2E), Tcolor: Colors.black)),
                 MaterialButton(
-                  onPressed: () {},
-                  child: button(width: 70, height: 30, bname: 'Delete', Tsize: 15, Ccolor: Color(0xffC4CE2E), Tcolor: Colors.black)),
-            
-                
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: button(
+                        width: 70,
+                        height: 30,
+                        bname: 'Cancel',
+                        Tsize: 15,
+                        Ccolor: Color(0xffC4CE2E),
+                        Tcolor: Colors.black)),
+                MaterialButton(
+                    onPressed: () {},
+                    child: button(
+                        width: 70,
+                        height: 30,
+                        bname: 'Delete',
+                        Tsize: 15,
+                        Ccolor: Color(0xffC4CE2E),
+                        Tcolor: Colors.black)),
               ],
             ),
           );
         });
-}
+  }
 
-
-  
-
-
-
-   bool isSwitched = false;
+  bool isSwitched = false;
   @override
   Widget build(BuildContext context) {
     double screenwidth = MediaQuery.of(context).size.width;
@@ -464,104 +471,87 @@ void _deletaccount() {
                   SizedBox(
                     height: 30,
                   ),
-                  Container(
-                    width: screenwidth,
-                    height: 60,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(15)),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 20, vertical: 15),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              text(
-                                  Tname: 'Driver mode',
-                                  Tsize: 20,
-                                  Tcolor: Colors.black,
-                                  Tweight: FontWeight.w400),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Container(
-                                  width: 40,
-                                  height: 40,
-                                  child: Image.asset(
-                                    "assets/drive.png",
-                                    fit: BoxFit.contain,
-                                    color: Colors.black,
-                                  )),
-                            ],
-                          ),
-                          SizedBox(width: 10),
-                          Switch(
-                            activeColor: Color(0xffC4CE2E),
-                            
-                           // inactiveTrackColor: Colors.black,
-                            inactiveThumbColor: Colors.black,
-                            value: isSwitched,
-                            onChanged: (value) {
-                              setState(() {
-                                isSwitched = value; // Toggle the switch state
-                              });
-                            },
-                          ),
-                        ],
-                      ),
-                    ),
+                 
+                  SizedBox(
+                    height: 15,
                   ),
-                  SizedBox(height: 15,),
-                  text(Tname: 'Your information', Tsize: 24, Tcolor: Color(0xffC4CE2E), Tweight: FontWeight.w400),
-                  SizedBox(height: 15,),
-
-                 MaterialButton(
-                  onPressed: _changeName,
-                  child: details(imagePath: "assets/pp.png", text1: 'Full name', text2: 'Stephen Convey')),
-
-                 SizedBox(height: 10,),
-
-                 MaterialButton(
-                  onPressed: _changeEmail,
-                      child: details(imagePath: "assets/email.png", text1: 'Email', text2: 'Stepen@gmail.com')),
-
-                 SizedBox(height: 10,),
-
-                 MaterialButton(
-                  onPressed: _changeNumber,
-                      child: details(imagePath: "assets/phone.png", text1: 'Mobile number', text2: '071 6342621')),
-            
-                  SizedBox(height: 15,),
-                  
-                  text(Tname: 'Emergency', Tsize: 24, Tcolor: Color(0xffC4CE2E), Tweight: FontWeight.w400),
-                  SizedBox(height: 15,),
-            
+                  text(
+                      Tname: 'Vehicle information',
+                      Tsize: 24,
+                      Tcolor: Color(0xffC4CE2E),
+                      Tweight: FontWeight.w400),
+                  SizedBox(
+                    height: 15,
+                  ),
                   MaterialButton(
-                    onPressed: _callemergency,
-                    child: details(imagePath: "assets/emergency.png", text1: 'Emergency contact', text2: 'Add Emergency contacts')),
-            
-                  SizedBox(height: 15,),
-                  text(Tname: 'Privacy & Security', Tsize: 24, Tcolor: Color(0xffC4CE2E), Tweight: FontWeight.w400),
-                  SizedBox(height: 15,),
-            
+                      onPressed: _changeName,
+                      child: details(
+                          imagePath: "assets/pp.png",
+                          text1: 'Vehicle',
+                          text2: 'Vehicle Type')),
+                  SizedBox(
+                    height: 10,
+                  ),
                   MaterialButton(
-                    onPressed: _changelanguage,
-                    child: details(imagePath: "assets/world.png", text1: 'Language', text2: 'Change your Language')),
-
-                 SizedBox(height: 10,),
-
-                 MaterialButton(
-                  onPressed: _changepassword,
-                  child: details(imagePath: "assets/lock.png", text1: 'Password', text2: 'Change Your Password')),
-                 SizedBox(height: 10,),
-
-                 MaterialButton(
-                  onPressed: _deletaccount,
-                  child: details(imagePath: "assets/delete.png", text1: 'Delete', text2: 'Delete Account')),
-            
-            
+                      onPressed: _changeEmail,
+                      child: details(
+                          imagePath: "assets/email.png",
+                          text1: 'Document',
+                          text2: 'View Documents')),
+                  SizedBox(
+                    height: 10,
+                  ),
+              
+                    
+                  text(
+                      Tname: 'Emergency',
+                      Tsize: 24,
+                      Tcolor: Color(0xffC4CE2E),
+                      Tweight: FontWeight.w400),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  MaterialButton(
+                      onPressed: _callemergency,
+                      child: details(
+                          imagePath: "assets/emergency.png",
+                          text1: 'Emergency contact',
+                          text2: 'Add Emergency contacts')),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  text(
+                      Tname: 'Privacy & Security',
+                      Tsize: 24,
+                      Tcolor: Color(0xffC4CE2E),
+                      Tweight: FontWeight.w400),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  MaterialButton(
+                      onPressed: _changelanguage,
+                      child: details(
+                          imagePath: "assets/world.png",
+                          text1: 'Language',
+                          text2: 'Change your Language')),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  MaterialButton(
+                      onPressed: _changepassword,
+                      child: details(
+                          imagePath: "assets/lock.png",
+                          text1: 'Password',
+                          text2: 'Change Your Password')),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  MaterialButton(
+                      onPressed: _deletaccount,
+                      child: details(
+                          imagePath: "assets/delete.png",
+                          text1: 'Delete',
+                          text2: 'Delete Account')),
                 ],
               ),
             ),
@@ -571,5 +561,3 @@ void _deletaccount() {
     );
   }
 }
-
-

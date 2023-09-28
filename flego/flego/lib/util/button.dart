@@ -20,22 +20,27 @@ class button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: width,
-      height: height,
-      decoration: BoxDecoration(
-        color: Ccolor,
-        borderRadius: BorderRadius.circular(25),
+    return MaterialButton(
+      onPressed: () {
+        
+      },
+      child: Container(
+        width: width,
+        height: height,
+        decoration: BoxDecoration(
+          color: Ccolor,
+          borderRadius: BorderRadius.circular(25),
+        ),
+        child: Text(
+          bname,
+          style: GoogleFonts.robotoCondensed(
+              fontSize: Tsize,
+              color: Tcolor,
+              fontWeight: FontWeight.w400),
+             textAlign: TextAlign.center,
+        ),
+        alignment: Alignment.center,
       ),
-      child: Text(
-        bname,
-        style: GoogleFonts.robotoCondensed(
-            fontSize: Tsize,
-            color: Tcolor,
-            fontWeight: FontWeight.w400),
-           textAlign: TextAlign.center,
-      ),
-      alignment: Alignment.center,
     );
   }
 }
