@@ -2,8 +2,13 @@ import 'package:flego/util/text.dart';
 import 'package:flutter/material.dart';
 
 class vehicleconditiondetails extends StatefulWidget {
+  final String imagepath;
+  final String infomations;
   
-  const vehicleconditiondetails({super.key,});
+  const vehicleconditiondetails({super.key,
+  required this.imagepath,
+  required this.infomations
+  });
 
   @override
   State<vehicleconditiondetails> createState() => _cancelridedetailsState();
@@ -37,11 +42,11 @@ class _cancelridedetailsState extends State<vehicleconditiondetails> {
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Image.asset("assets/helmet.png"),
+                    child: Image.asset(widget.imagepath),
                   )),
                   SizedBox(width: screenwidth * 0.05,),
                 text(
-                    Tname: 'Weare helmet',
+                    Tname: widget.infomations,
                     Tsize: 20,
                     Tcolor: Colors.white,
                     Tweight: FontWeight.w500),

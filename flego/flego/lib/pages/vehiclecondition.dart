@@ -50,7 +50,22 @@ class _CertificateverifyState extends State<vehiclecondition> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                vehicleconditiondetails()
+
+                Column(
+                  children:[ 
+                    vehicleconditiondetails(imagepath: "assets/helmet.png", infomations: 'Weare helmet'),
+                    SizedBox(height: 20,),
+                    vehicleconditiondetails(imagepath: "assets/signallight.png", infomations: 'Check Signal light'),
+                     SizedBox(height: 20,),
+                    vehicleconditiondetails(imagepath: "assets/tires.png", infomations: 'Check tyre condition'),
+                     SizedBox(height: 20,),
+                    vehicleconditiondetails(imagepath: "assets/sidemirrors.png", infomations: 'Check side mirror'),
+                     SizedBox(height: 20,),
+                    vehicleconditiondetails(imagepath: "assets/seatbelt.png", infomations: 'Wear seatbelt'),
+
+                  ]
+                  ),
+                
                 ],
               ),
             )
