@@ -1,8 +1,7 @@
-
-import 'package:flego/pages/Deleteaccount.dart';
-import 'package:flego/pages/cancellingride.dart';
+import 'package:flego/pages/Addfavoriteloca.dart';
+import 'package:flego/pages/incom.dart';
+import 'package:flego/pages/packageframe.dart';
 import 'package:flego/pages/profile.dart';
-
 import 'package:flego/pages/savedcard.dart';
 import 'package:flego/pages/vehiclecondition.dart';
 
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: deleteaccount(),
+      home: favoritelocation(),
     );
   }
 }
